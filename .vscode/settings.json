@@ -1,0 +1,14 @@
+// .vscode/settings.json
+{
+    "typescript.preferences.includePackageJsonAutoImports": "auto",
+    "typescript.suggest.autoImports": true,
+    "javascript.suggest.autoImports": true,
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "files.associations": {
+        "*.electron.js": "javascript"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

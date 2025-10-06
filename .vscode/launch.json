@@ -1,0 +1,33 @@
+// .vscode/launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EdiTitanApplication",
+            "request": "launch",
+            "mainClass": "edi_titan_backend.edi_titan.EdiTitanApplication",
+            "projectName": "edi-titan"
+        },
+        {
+            "name": "Debug Electron Main",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/electron-frontend/src/main/main.js",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "runtimeExecutable": "${workspaceFolder}/electron-frontend/node_modules/.bin/electron",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/electron-frontend/node_modules/.bin/electron.cmd"
+            }
+        },
+        {
+            "name": "Debug Spring Boot",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "com.edi.EDIApplication",
+            "projectName": "spring-backend"
+        }
+    ]
+}
